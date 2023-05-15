@@ -41,17 +41,17 @@ function NavBar() {
         </Typography>
       </Button>
       <Box>
-        <Button href="/writings">
+        <Button href="/writings/">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
             Writings
           </Typography>
         </Button>
-        <Button href="/about">
+        <Button href="/projects/">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
-            About
+            Projects
           </Typography>
         </Button>
-        <Button variant="outlined" sx={{ borderRadius: 0, ml: '10px', borderColor: 'secondary.main' }} href="/resume">
+        <Button variant="outlined" sx={{ borderRadius: 0, ml: '10px', borderColor: 'secondary.main' }} href="/resume/">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
             Resume
           </Typography>

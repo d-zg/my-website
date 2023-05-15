@@ -11,7 +11,7 @@ function ImageCircle({
         pt: '8%',
         pl: '8%',
         position: 'absolute',
-        pb: '10%',
+        pb: '0%',
         display: 'flex',
         justifyContent: 'center',
         alignContent: 'center',

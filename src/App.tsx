@@ -3,9 +3,12 @@ import './App.css';
 import {
   CssBaseline, Paper, ThemeProvider, createTheme,
 } from '@mui/material';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
-// import { BrowserRouter } from 'react-router-dom';
+import Resume from './pages/Resume';
+import ProjectPage from './pages/ProjectPage';
+import BlogPage from './pages/BlogPage';
 
 // import HomePage from './pages/HomePage';
 // import NavBar from './components/NavBar';
@@ -35,6 +38,14 @@ function App() {
         fontSize: '16px',
         color: '#808080',
       },
+      h1: {
+        fontSize: '64px',
+        fontWeight: '300',
+      },
+      h3: {
+        fontSize: '42px',
+        fontWeight: '300',
+      },
     },
   });
   return (
@@ -56,7 +67,14 @@ function App() {
         }}
       >
         <NavBar />
-        <HomePage />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/resume/" element={<Resume />} />
+            <Route path="/projects/" element={<ProjectPage />} />
+            <Route path="/writings/" element={<BlogPage />} />
+          </Routes>
+        </BrowserRouter>
       </Paper>
     </ThemeProvider>
   );

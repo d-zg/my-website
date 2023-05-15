@@ -27,7 +27,8 @@
             "ts": "never",
             "tsx": "never"
           }],
-        "linebreak-style": "off"  
+        "linebreak-style": "off",
+        "import/no-extraneous-dependencies": "off"
     },
     "settings": {
         "import/resolver": {
