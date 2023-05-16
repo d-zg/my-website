@@ -24,7 +24,7 @@ function NavBar() {
         zIndex: 1,
       }}
     >
-      <Button href="/">
+      <Button href="#/">
         <Typography
           variant="button"
           sx={{
@@ -41,17 +41,17 @@ function NavBar() {
         </Typography>
       </Button>
       <Box>
-        <Button href="/writings/">
+        <Button href="#/writings">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
             Writings
           </Typography>
         </Button>
-        <Button href="/projects/">
+        <Button href="#/projects">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
             Projects
           </Typography>
         </Button>
-        <Button variant="outlined" sx={{ borderRadius: 0, ml: '10px', borderColor: 'secondary.main' }} href="/resume/">
+        <Button variant="outlined" sx={{ borderRadius: 0, ml: '10px', borderColor: 'secondary.main' }} href="#/resume">
           <Typography variant="button" sx={{ fontSize: '16px' }}>
             Resume
           </Typography>

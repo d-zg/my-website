@@ -3,7 +3,7 @@ import './App.css';
 import {
   CssBaseline, Paper, ThemeProvider, createTheme,
 } from '@mui/material';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import Resume from './pages/Resume';
@@ -67,14 +67,15 @@ function App() {
         }}
       >
         <NavBar />
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<ProjectPage />} />
+            <Route path="/writings" element={<BlogPage />} />
             <Route path="/" element={<HomePage />} />
-            <Route path="/resume/" element={<Resume />} />
-            <Route path="/projects/" element={<ProjectPage />} />
-            <Route path="/writings/" element={<BlogPage />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Paper>
     </ThemeProvider>
   );

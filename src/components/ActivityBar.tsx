@@ -31,7 +31,7 @@ function ActivityBar({
         </Typography>
         <WeekendIcon />
       </Button>
-      <Button href={bookLink}>
+      <Button href={bookLink} target="_blank">
         <Typography variant="button" sx={{ color: '#808080' }}>
           {'I\'m reading:'}
           <br />
@@ -39,7 +39,7 @@ function ActivityBar({
         </Typography>
         <AutoStoriesIcon />
       </Button>
-      <Button href={skillLink}>
+      <Button href={skillLink} target="_blank">
         <Typography variant="button" sx={{ color: '#808080' }}>
           {'I\'m learning:'}
           <br />

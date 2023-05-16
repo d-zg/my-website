@@ -11,7 +11,7 @@ function BlogPage() {
       <Typography>
         Nothing here yet! Get me to write something.
       </Typography>
-      <Button href="/">
+      <Button href="#/">
         <Typography variant="button" sx={{ fontSize: '16px' }}>
           Back to home
         </Typography>

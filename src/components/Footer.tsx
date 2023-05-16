@@ -1,6 +1,10 @@
 import React from 'react';
-import { Box } from '@mui/material';
 
+// not in use or implemented rn
 function Footer() {
-
+  return (
+    <div />
+  );
 }
+
+export default Footer;
