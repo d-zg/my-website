@@ -49,7 +49,7 @@ function Resume() {
       <Typography variant="h3" sx={{ pt: '40px' }}>
         Experiences
       </Typography>
-      <Typography sx={{ pt: '10px' }}>
+      {/* <Typography sx={{ pt: '10px' }}>
         <strong>Vanderbilt Data Science Institute</strong>
       </Typography>
       <Typography sx={{ pt: '0px' }}>
@@ -57,7 +57,7 @@ function Resume() {
       </Typography>
       <Typography sx={{ fontSize: '14px', pt: '14px' }}>
         • Developing NLP/data science applications for Nashville nonprofits.
-      </Typography>
+      </Typography> */}
       <Typography sx={{ pt: '20px' }}>
         <strong>Vanderbilt University Leach Lab</strong>
       </Typography>

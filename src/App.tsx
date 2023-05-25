@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import Resume from './pages/Resume';
 import ProjectPage from './pages/ProjectPage';
 import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 // import HomePage from './pages/HomePage';
 // import NavBar from './components/NavBar';
@@ -72,7 +73,7 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects" element={<ProjectPage />} />
             <Route path="/writings" element={<BlogPage />} />
-            <Route path="/" element={<HomePage />} />
+            <Route path="/writings/:id" element={<BlogPostPage />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </HashRouter>

@@ -7,6 +7,11 @@ import CardHolder from '../components/CardHolder';
 function ProjectPage() {
   const projects : CardHolderProps[] = [
     {
+      title: 'This Page!',
+      description: 'The frontend is written with React and MaterialUI components. The backend, which is pretty much just for the blog, is a node + express server hosted on a free EC2 instance. Blogposts are stored in MongoDB and hosted on a free mongo atlas instance.',
+      link: 'https://github.com/d-zg/my-website',
+    },
+    {
       title: 'Nashville Accidents',
       description: `Analyzed 1TB+ of Nashville emergency incident data,
       weather data, and traffic data. Generated visualizations, performed

@@ -58,7 +58,7 @@ function HomePage() {
             <br />
             {'\nHere\'s what I\'m up to right now:'}
           </Typography>
-          <ActivityBar book="napkin" activity="Exploring Boston" skill="MaterialUI" bookLink="https://venhance.github.io/napkin/Napkin.pdf" skillLink="https://mui.com/" />
+          <ActivityBar book="napkin" activity="Playing Basketball" skill="MaterialUI" bookLink="https://venhance.github.io/napkin/Napkin.pdf" skillLink="https://mui.com/" />
         </Box>
         <Box sx={{
           position: 'relative',
