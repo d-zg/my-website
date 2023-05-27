@@ -33,6 +33,7 @@ function HomePage() {
             pt: '5%',
             pl: '5%',
             pr: '5%',
+            pb: '5%',
           }}
         >
           <Typography

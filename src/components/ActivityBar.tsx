@@ -9,23 +9,30 @@ function ActivityBar({
 }: any) {
   return (
     <Box sx={{
+      maxWidth: '100%',
       display: 'flex',
       flexDirection: 'row',
-      flexWrap: 'wrap',
+      // flexWrap: 'wrap',
       color: 'secondary.main',
       alignItems: 'center',
       justifyContent: 'left',
+      columnGap: '4px',
+      overflowX: 'auto',
+      '&::-webkit-scrollbar': {
+        display: 'none',
+      },
       '& .MuiTypography-root': {
-        padding: '15px',
-        fontSize: '14px',
+        padding: '5%',
+        fontSize: '15px',
         paddingRight: '12px',
         color: '#808080',
-        flexGrow: 1,
+        // flexGrow: 1,
       },
+
     }}
     >
       <Button>
-        <Typography variant="button" sx={{ color: '#808080' }}>
+        <Typography variant="button" sx={{ whiteSpace: 'nowrap', color: '#808080' }}>
           {'I\'m relaxing by:'}
           <br />
           {`${activity}`}
@@ -33,7 +40,7 @@ function ActivityBar({
         <WeekendIcon />
       </Button>
       <Button href={bookLink} target="_blank">
-        <Typography variant="button" sx={{ color: '#808080' }}>
+        <Typography variant="button" sx={{ whiteSpace: 'nowrap', color: '#808080' }}>
           {'I\'m reading:'}
           <br />
           {`${book}`}
@@ -41,7 +48,7 @@ function ActivityBar({
         <AutoStoriesIcon />
       </Button>
       <Button href={skillLink} target="_blank">
-        <Typography variant="button" sx={{ color: '#808080' }}>
+        <Typography variant="button" sx={{ whiteSpace: 'nowrap', color: '#808080' }}>
           {'I\'m learning:'}
           <br />
           {`${skill}`}
