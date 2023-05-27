@@ -14,6 +14,7 @@ function ActivityBar({
       flexWrap: 'wrap',
       color: 'secondary.main',
       alignItems: 'center',
+      justifyContent: 'left',
       '& .MuiTypography-root': {
         padding: '15px',
         fontSize: '14px',

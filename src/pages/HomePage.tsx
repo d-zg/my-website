@@ -19,6 +19,59 @@ function HomePage() {
     setIndex((currentIndex + 1) % art.length);
   };
 
+  const isMobile = window.innerWidth < 600;
+
+  if (isMobile) {
+    return (
+      <Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          sx={{
+            flexWrap: 'wrap',
+            alignContent: 'left',
+            pt: '5%',
+            pl: '5%',
+            pr: '5%',
+          }}
+        >
+          <Typography
+            fontSize="64px"
+            fontWeight="300"
+          >
+            {'Hey! I\'m Daniel Zhang.'}
+          </Typography>
+          <Typography
+            sx={{ pt: '8%', mr: '10%' }}
+          >
+            {`I'm a B.S. + M.Sc. student at Vanderbilt University majoring in Computer Science
+          and Math. I'm broadly interested in generative ML, distributed computing, and data science.`}
+          </Typography>
+          <ContactBar />
+          <Typography
+            sx={{ pt: '8%', mr: '10%' }}
+          >
+            This is my portfolio, blog, notebook, and frontend practice website.
+            <br />
+            {'\nHere\'s what I\'m up to right now:'}
+          </Typography>
+          <ActivityBar book="napkin" activity="Playing Basketball" skill="MaterialUI" bookLink="https://venhance.github.io/napkin/Napkin.pdf" skillLink="https://mui.com/" />
+          <ImageCircle
+            handleClick={incrementIndex}
+            imageSource={art[currentIndex]}
+            sx={{
+              pl: '0%',
+              top: '10%',
+              zIndex: 2,
+              position: 'relative',
+            // wordWrap: 'break-word',
+            // whiteSpace: 'pre-wrap',
+            }}
+          />
+        </Box>
+      </Box>
+    );
+  }
   return (
     <Box>
       <Box

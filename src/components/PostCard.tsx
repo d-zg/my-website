@@ -8,6 +8,7 @@ function PostCard({ title, description, postid } : any) {
   const handleClick = () => {
     window.location.href = `#/writings/${postid}`;
   };
+  const isMobile = window.innerWidth < 600;
   return (
   // <Typography>
   //   Sup
@@ -28,7 +29,7 @@ function PostCard({ title, description, postid } : any) {
           title={title}
           sx={{
             '& .MuiTypography-root': {
-              fontSize: '5rem',
+              fontSize: isMobile ? '3rem' : '5rem',
             },
             '&:hover .MuiCardHeader-title': {
               transition: 'all 0.3s ease',

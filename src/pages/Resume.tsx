@@ -6,15 +6,17 @@ function Resume() {
     <Box sx={{
       display: 'flex',
       flexDirection: 'column',
-      pt: '4%',
+      pt: '2.5%',
       pl: '10%',
       pr: '10%',
       pb: '10%',
     }}
     >
-      <Typography variant="h3">
+      <Typography variant="h1" fontSize="96px" fontWeight="500" sx={{ opacity: '0.3' }}>Resume</Typography>
+      <Typography variant="h4" fontWeight="400">
         Education
       </Typography>
+      <div style={{ borderBottom: '1px solid #D3D3D3', margin: '10px 0' }} />
       <Typography sx={{ pt: '5px' }}>
         Vanderbilt University, M.Sc. + B.S. Computer Science, B.A. Math. Expected Spring 2025.
       </Typography>
@@ -28,9 +30,10 @@ function Resume() {
         Data Science for Social Good, Math Club, Google Developer Club
       </Typography>
 
-      <Typography variant="h3" sx={{ pt: '40px' }}>
+      <Typography variant="h4" fontWeight="400" sx={{ pt: '40px' }}>
         Skills
       </Typography>
+      <div style={{ borderBottom: '1px solid #D3D3D3', margin: '10px 0' }} />
       <Typography fontSize="16px">
         <strong>Languages:</strong>
         {' '}
@@ -46,9 +49,10 @@ function Resume() {
         Latex, Adobe Photoshop, Indesign, Illustrator, EMT/CPR certified
       </Typography>
 
-      <Typography variant="h3" sx={{ pt: '40px' }}>
+      <Typography variant="h4" fontWeight="400" sx={{ pt: '40px' }}>
         Experiences
       </Typography>
+      <div style={{ borderBottom: '1px solid #D3D3D3', margin: '10px 0' }} />
       {/* <Typography sx={{ pt: '10px' }}>
         <strong>Vanderbilt Data Science Institute</strong>
       </Typography>

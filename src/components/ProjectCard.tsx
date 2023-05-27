@@ -5,6 +5,7 @@ import {
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 function ProjectCard({ title, description, link } : any) {
+  const isMobile = window.innerWidth < 600;
   return (
   // <Typography>
   //   Sup
@@ -15,8 +16,8 @@ function ProjectCard({ title, description, link } : any) {
         background: 'transparent',
         border: '3px solid #00754b',
         borderRadius: 0,
-        width: '40%',
-        height: '50vh',
+        width: isMobile ? '95%' : '40%',
+        height: isMobile ? '60vh' : '50vh',
       }}
     >
       <Box sx={{ p: 2 }}>
