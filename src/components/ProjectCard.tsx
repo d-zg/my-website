@@ -22,6 +22,7 @@ function ProjectCard({ title, description, link } : any) {
       <Box sx={{ p: 2 }}>
         <CardHeader
           title={title}
+          onClick={() => { window.open(link, '_blank'); }}
           sx={{
             '& .MuiTypography-root': {
               fontSize: '5rem',
@@ -29,6 +30,11 @@ function ProjectCard({ title, description, link } : any) {
             lineHeight: '1',
             whiteSpace: 'wrap',
             pr: '30%',
+            '&:hover .MuiCardHeader-title': {
+              transition: 'all 0.3s ease',
+              opacity: '0.3',
+            },
+
           }}
         />
         <CardContent sx={{ minHeight: '55%' }}>

@@ -11,21 +11,27 @@ function ContactBar() {
       color: 'secondary.main',
     }}
     >
-      <Button>
+      <Button href="#/resume">
         <Typography variant="button" sx={{ color: '#808080' }}>
           Resume
         </Typography>
         <ArrowOutwardIcon />
       </Button>
-      <Button>
+      <Button href="https://github.com/d-zg/" target="_blank">
         <Typography variant="button" sx={{ color: '#808080' }}>
           Github
         </Typography>
         <ArrowOutwardIcon />
       </Button>
-      <Button>
+      <Button href="https://www.linkedin.com/in/daniel-zhang-71273a25b/" target="_blank">
         <Typography variant="button" sx={{ color: '#808080' }}>
           Linkedin
+        </Typography>
+        <ArrowOutwardIcon />
+      </Button>
+      <Button href="mailto:daniel.zhang.1@vanderbilt.edu">
+        <Typography variant="button" sx={{ color: '#808080' }}>
+          Email
         </Typography>
         <ArrowOutwardIcon />
       </Button>
