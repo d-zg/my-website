@@ -13,7 +13,7 @@ function BlogPostPage() {
   const [blogpost, setBlogPost] = useState<BlogPost>();
   useEffect(() => {
     setLoading(1);
-    fetch(`https:dzgwriting.xyz:443/blogposts/${id}`)
+    fetch(`https://dzgwriting.xyz:443/blogposts/${id}`)
       .then((response) => response.json())
       .then((json) => {
         setBlogPost(json);
