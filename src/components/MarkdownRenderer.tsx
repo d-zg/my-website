@@ -1,24 +1,54 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import {
-  Box, Table, TableBody, TableRow, TableCell,
+  Typography, Box, Table, TableBody, TableRow, TableCell, ThemeProvider, createTheme,
 } from '@mui/material';
 import remarkGfm from 'remark-gfm';
 
-function StyledTableCell({ sx, align, children } : any) {
+function StyledTypography({ children } : any) {
   return (
-    <TableCell
-      sx={{
-        border: '1px solid grey',
-        // borderBottom: 'none', // optional, remove if not needed
-        textAlign: align || 'left',
-        fontWeight: 'inherit',
-        fontSize: 'inherit',
-        ...sx,
-      }}
+    <Typography
+      sx={{ fontSize: '20px' }}
     >
       {children}
-    </TableCell>
+      <br />
+      <br />
+    </Typography>
+  );
+}
+
+const customTheme = createTheme({
+  typography: {
+    // Override the font sizes as per your requirements
+    fontSize: 16, // for the default font size
+    h1: {
+      fontSize: 24,
+    },
+    h2: {
+      fontSize: 20,
+    },
+    body1: {
+      fontSize: 20,
+    },
+  },
+});
+
+function StyledTableCell({ sx, align, children } : any) {
+  return (
+    <ThemeProvider theme={customTheme}>
+      <TableCell
+        sx={{
+          border: '1px solid grey',
+          // borderBottom: 'none', // optional, remove if not needed
+          textAlign: align || 'left',
+          fontWeight: 'inherit',
+          fontSize: 'inherit',
+          ...sx,
+        }}
+      >
+        {children}
+      </TableCell>
+    </ThemeProvider>
   );
 }
 
@@ -28,7 +58,12 @@ function MarkDownRenderer({ markdownContent } : any) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          table: Table, tbody: TableBody, tr: TableRow, td: StyledTableCell, th: StyledTableCell,
+          table: Table,
+          tbody: TableBody,
+          tr: TableRow,
+          td: StyledTableCell,
+          th: StyledTableCell,
+          p: StyledTypography,
         }}
       >
         {markdownContent}

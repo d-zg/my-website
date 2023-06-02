@@ -76,10 +76,11 @@ function BlogPostPage() {
         pt: '2.5%',
         ml: '10%',
         mr: '8%',
+        mb: '2.5%',
         alignItems: 'center',
       }}
       >
-        <Typography variant="h1" fontSize="96px" fontWeight="500" sx={{ opacity: '0.3' }}>{headline}</Typography>
+        <Typography variant="h1" fontSize="96px" fontWeight="500" sx={{ opacity: '0.8' }}>{headline}</Typography>
         <Typography fontSize="24px">{tagline}</Typography>
         <MarkDownRenderer markdownContent={fulltext} />
       </Box>
