@@ -4,6 +4,7 @@ import {
 } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import { BlogPost } from '../types';
+import MarkDownRenderer from '../components/MarkdownRenderer';
 // import PostGrid from '../components/PostGrid';
 
 function BlogPostPage() {
@@ -80,7 +81,7 @@ function BlogPostPage() {
       >
         <Typography variant="h1" fontSize="96px" fontWeight="500" sx={{ opacity: '0.3' }}>{headline}</Typography>
         <Typography fontSize="24px">{tagline}</Typography>
-        <Typography>{fulltext}</Typography>
+        <MarkDownRenderer markdownContent={fulltext} />
       </Box>
     );
   }
